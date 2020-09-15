@@ -1,31 +1,22 @@
-# Adonis fullstack application
+# Adonis Based WebSocket Boilerplate
+-------------------
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+This is a bolierplate code for creating a websocket based backend. I'll keep modifying it and will add more capabilities to make it more usable for any usage.
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+This code already has the capability of broadcasting messages using edge engine. Some of the usages I'm targeting to add are:
+
+* A ReactJS app using websocket.
+* A mobile app using websocket.
 
 ## Setup
+-----------------
 
-Use the adonis command to install the blueprint
-
-```bash
-adonis new yardstick
-```
-
-or manually clone the repo and then run `npm install`.
+Clone the repo and then run `npm install`.
 
 
-### Migrations
+### Running
+-----------------
 
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+I highly recommend to use:
+* [Nodemon](https://nodemon.io/) in development mode.
+* [PM2](https://pm2.keymetrics.io/) in production.
