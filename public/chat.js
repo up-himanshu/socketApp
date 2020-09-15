@@ -30,7 +30,8 @@ function subscribeToChannel() {
   chat.on("message", (message) => {
     $(".messages").append(`
 		<div class="message"><h3> ${message.username} </h3> <p> ${message.body} </p> </div>
-	  `);
+    `);
+    scrollToTop();
   });
 }
 
@@ -48,3 +49,12 @@ $("#message").keyup(function (e) {
     return;
   }
 });
+
+function scrollToTop() {
+  // window.setInterval(function () {
+  //   var elem = document.getElementById("idMessage");
+  //   elem.scrollTop = elem.scrollHeight;
+  // }, 1);
+  var elem = document.getElementById("idMessage");
+  elem.scrollTop = elem.scrollHeight;
+}
