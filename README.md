@@ -1,5 +1,4 @@
 # Adonis Based WebSocket Boilerplate
--------------------
 
 This is a bolierplate code for creating a websocket based backend. I'll keep modifying it and will add more capabilities to make it more usable for any usage.
 
@@ -9,13 +8,11 @@ This code already has the capability of broadcasting messages using edge engine.
 * A mobile app using websocket.
 
 ## Setup
------------------
 
 Clone the repo and then run `npm install`.
 
 
 ### Running
------------------
 
 I highly recommend to use:
 * [Nodemon](https://nodemon.io/) in development mode.
